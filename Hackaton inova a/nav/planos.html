@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planos.css">
+    <title>Sobre Nós</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div id="botao_principal" class="container_nav texto_principal">
+                <a href="#">
+                    <img src="../imagenx/icon_menu.png" alt="">
+                </a>
+    
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        
+
+
+        <p>
+
+            <strong>Planos de assinatura</strong> <br>
+            Para 100 animais: R$ 15,00 <br>
+            <br>
+            Para 200 animais: R$ 25,00 <br>
+            <br>
+            Para 500 animais: R$ 35,00 <br>
+            <br>
+            Para 1000 animais: R$ 60,00 <br>
+            <br>
+            Customizado: Entre em contato
+            
+            
+        </p>
+
+        <div id="container_opcoes">
+            <div id="box_opcoes">
+                <div class="opcoes"><a href="produção_de_leite/registro_vaca.html">Produção de Leite</a></div>
+                <div class="opcoes"><a href="#">Desempenho dos Animais</a></div>
+                <div class="opcoes"><a href="#">Qualidade do Leite</a></div>
+                <div class="opcoes"><a href="#">Custos de Produção</a></div>
+                <div class="opcoes"><a href="#">Informaçoes Climaticas</a></div>
+                <div class="opcoes"><a href="#">Cadastro do Animal</a></div>
+                <div class="opcoes"><a href="#">Valor do Leite</a></div>
+                <div class="opcoes"><a href="../index.html">Menu Principal</a></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var botao_principal = document.getElementById("botao_principal");
+        var box_opcoes = document.getElementById("box_opcoes");
+
+        botao_principal.addEventListener("click", function() {
+        if(box_opcoes.style.display == "none"){
+            box_opcoes.style.display = "flex"
+        }else{
+            box_opcoes.style.display = "none"
+        };
+});
+    </script>
+</body>
+</html>
