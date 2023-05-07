@@ -133,7 +133,7 @@
 
     #container_header_2 nav ol li{
         display: inline;
-        background-color: #2666576e;
+        background-color: #3386736e;
 
         margin-top:0px;
         padding: 2px;
@@ -151,4 +151,18 @@
         transform: scale(1.1);
     }
 
+    /* ------------------------------------------------------ */
+
+    main{
+        min-height: 100vh;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    main img{
+        width: 100vw;
+        height: 20%;
+    }
+    
 }
