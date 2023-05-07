@@ -2,6 +2,8 @@
     *{
         margin: 0;
         padding: 0;
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     :root{
@@ -118,8 +120,9 @@
     }
 
     #container_header_2 nav{
-        width: 90%;
+        width: 100%;
         height: 100%;
+
     }
 
     #container_header_2 nav ol{
@@ -130,8 +133,22 @@
 
     #container_header_2 nav ol li{
         display: inline;
+        background-color: #318b766e;
+
+        margin-top:0px;
+        padding: 2px;
+        color: #fff;
     }
 
+    #container_header_2 nav ol li a{
+        display: inline;
+        color: #fff;
+        text-decoration: none;
+    }
 
+    #container_header_2 nav ol li:hover{
+        background-color: var(--cor_verde_escuro);
+        transform: scale(1.1);
+    }
 
 }
