@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro_vaca.css">
+    <title>Registro de animais</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div id="botao_principal" class="container_nav texto_principal">
+                <a href="#">
+                    <img src="../imagenx/icon_menu.png" alt="">
+                </a>
+    
+            </div>
+
+            <div id="botao_add_vaca" class="container_nav texto_principal cont2">
+                <a href="#"><img src="../imagenx/icon_mais.png" alt="" id="imagem_mais"></a>
+            </div>
+        </nav>
+
+
+        
+    </header>
+
+    <main>
+        <div id="container_opcoes">
+            <div id="box_opcoes">
+                <div class="opcoes"><a href="#">Produção de Leite</a></div>
+                <div class="opcoes"><a href="#">Desempenho dos Animais</a></div>
+                <div class="opcoes"><a href="#">Qualidade do Leite</a></div>
+                <div class="opcoes"><a href="#">Custos de Produção</a></div>
+                <div class="opcoes"><a href="#">Informaçoes Climaticas</a></div>
+                <div class="opcoes"><a href="#">Cadastro do Animal</a></div>
+                <div class="opcoes"><a href="#">Valor do Leite</a></div>
+                <div class="opcoes"><a href="../index.html">Menu Principal</a></div>
+            </div>
+
+            <div id="box_add_vaca">
+                <div class="opcoes"><a href="#">Adicionar Animal</a></div>
+                <div class="opcoes"><a href="#">Remover Animal</a></div>
+            </div>
+        </div>
+
+        <div id="container_registro_vacas">
+            <div id="container_vacas">
+                <div class="vaca">ANIMAL 1</div>
+                <div class="vaca">ANIMAL 2</div>
+                <div class="vaca">ANIMAL 3</div>
+                <div class="vaca">ANIMAL 4</div>
+                <div class="vaca">ANIMAL 5</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var botao_principal = document.getElementById("botao_principal");
+        var botao_add_vaca = document.getElementById("botao_add_vaca")
+        var box_opcoes = document.getElementById("box_opcoes");
+        var box_add_vaca = document.getElementById("box_add_vaca");
+
+        botao_principal.addEventListener("click", function() {
+        if(box_opcoes.style.display == "none"){
+            box_opcoes.style.display = "flex"
+        }else{
+            box_opcoes.style.display = "none"
+        };
+
+
+        botao_add_vaca.addEventListener("click", function() {
+            if(box_add_vaca.style.display == "none"){
+                box_add_vaca.style.display = "flex"
+            }else{
+                box_add_vaca.style.display = "none"
+            }
+        })
+});
+    </script>
+</body>
+</html>
