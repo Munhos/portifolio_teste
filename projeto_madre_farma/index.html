@@ -28,18 +28,87 @@
         </div>
 
         <div id="container_header_2">
-            <nav>
-                <ol>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
-                </ol>
-            </nav>
+            <ol>
+                <li><a href="#">Produtos</a>
+                <div id="linha_lista"></div></li>
+                <li><a href="#">Sobre Nós</a>
+                <div id="linha_lista"></div></li>
+                <li><a href="#">Contato</a>
+                <div id="linha_lista"></div></li>
+                <li><a href="#">Trabalhe Conosco</a>
+                <div id="linha_lista"></div></li>
+            </ol>
         </div>
+
+        
     </header>
     <main>
-        <img src="imagens/main_2.png" alt="">
+
+        
+        <div id="fundo_geral_menu">
+            <div id="container_menu">
+                <div id="botao_login"><a href="#"><img src="imagens/icones/pessoa.png" alt=""> Fazer login</a></div>
+                <div><a href="#"><img src="imagens/icones/casa.png" alt=""> Minha conta</a></div>
+                <div><a href="#"><img src="imagens/icones/pessoa.png" alt=""> meus dados</a></div>
+                <div><a href="#"><img src="imagens/icones/cesta.png" alt=""> meus pedidos</a></div>
+            </div>
+        </div>
+
+        <div id="fundo_geral_carrinho">
+            <div id="container_carrinho">
+                <div class="opcao_carrinho">
+                    <img src="imagens/logo-header.png" alt=""
+                    id="imagem_produto_carrinho"> 
+                    <a href="#">NOME DO PRODUTO</a>
+                    <div id="botoes_quantidade">
+                        <button id="bot_carrinho_mais">
+                            <img src="imagens/icones/mais.png" alt="">
+                        </button>
+                        <input type="number" name="" id="" value="0">
+                        <button id="bot_carrinho_menos">
+                            <img src="imagens/icones/sinal-de-menos.png" alt="">
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="opcao_carrinho">
+                    <img src="imagens/logo-header.png" alt=""
+                    id="imagem_produto_carrinho"> 
+                    <a href="#">NOME DO PRODUTO</a>
+                    <div id="botoes_quantidade">
+                        <button id="bot_carrinho_mais">
+                            <img src="imagens/icones/mais.png" alt="">
+                        </button>
+                        <input type="number" name="" id="" value="0">
+                        <button id="bot_carrinho_menos">
+                            <img src="imagens/icones/sinal-de-menos.png" alt="">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- CARROSSEL -->
+        <div id="container">
+            <input id="dot1" type="radio" name="dotGroup" checked="checked" />
+            <label for="dot1"> </label>
+            <div class="slide background1">1</div>
+          
+            <input id="dot2" type="radio" name="dotGroup" />
+            <label for="dot2"> </label>
+            <div class="slide background2">2</div>
+          
+            <input id="dot3" type="radio" name="dotGroup" />
+            <label for="dot3"> </label>
+            <div class="slide background3">3</div>
+          
+            <input id="dot4" type="radio" name="dotGroup" />
+            <label for="dot4"> </label>
+            <div class="slide background4">4</div>
+          </div>
+
     </main>
     <script src="script.js"></script>
 </body>
