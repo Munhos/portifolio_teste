@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --cor_azul: #315ca0;
+    --cor_azul_escuro: #274980;
+    --cor_azul_escuro_2: #1d3863;
+    --cor_azul_transparente:#315ba09f;
+
+    --cor_verde:#3fb498;
+    --cor_verde_transparente: #3fb499b0;
+    --cor_verde_escuro:#318b76;
+    
+    --cor_branco: rgb(248, 248, 248)
+}
+
+
+body{
+    height: 100vh;
+    overflow: none;
+
+    display: flex;
+    justify-content: end;
+}
+
+/* ----------HEADER---------- */
+
+header{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--cor_branco);
+
+    position: absolute;
+
+    animation: transparencia 2s forwards;
+    
+}
+
+@keyframes transparencia{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+nav{
+    width: 100%;
+}
+
+nav > ol{
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+nav > ol > li{
+    display: inline;
+    font-size: 0.8em;
+    padding: 10px;
+
+}
+
+nav > ol > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+nav > ol > img{
+    width: 25%;
+    margin-left: 10px;
+}
+
+.sublinhado{
+    width: 0%;
+    height: 2px;
+}
+
+.texto_header:hover + .sublinhado{
+    animation: expandir_sublinhado 1s forwards;
+}
+
+@keyframes expandir_sublinhado{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+#texto_azul{
+    color: var(--cor_azul);
+}
+#sublinhado_azul{
+    background-color: var(--cor_azul);
+}
+
+
+#texto_verde{
+    color: var(--cor_verde);
+}
+#sublinhado_verde{
+    background-color: var(--cor_verde);
+}
+
+
+#texto_azul_escuro{
+    color: var(--cor_azul_escuro);
+}
+#sublinhado_azul_escuro{
+    background-color: var(--cor_azul_escuro);
+}
+
+
+#texto_verde_escuro{
+    color: var(--cor_verde_escuro);
+}
+#sublinhado_verde_escuro{
+    background-color: var(--cor_verde_escuro);
+}
+
+header > div{
+    width: 50%;
+    background-color: var(--cor_verde_transparente);
+    height: 100vh;
+    position: absolute;
+
+    animation: expandir 2s forwards;
+}
+
+@keyframes expandir{
+    0%{
+        width: 0%;
+        right: 0%;
+    }
+    50%{
+        width: 100vw;
+        right: 0%;
+    }
+    100%{
+        width: 50vw;
+        right: 100%;
+    }
+
+}
+
+/* ----------MAIN---------- */
+main{  
+    background-image: url(imagens/fundo_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: expandir_main 2s forwards;
+    height: 100vh;
+}
+
+@keyframes expandir_main{
+    0%{
+        width: 0%;    
+          
+    }
+    100%{
+        width: 100%;
+    }
+}

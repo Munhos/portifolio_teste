@@ -105,8 +105,8 @@
         display: flex;
         justify-content: center;
         align-self: center;
-        width: 10%;
-        height: 50%;
+        width: 30px;
+        height: 30px;
 
     }
 
@@ -399,42 +399,49 @@
 
     /* CARROSSEL */
 
-    #container {
-        width: 90%;
-        height: 100%;
+    #container_slider {
+        width: 95%;
+        height: 200px;
         position: relative;
         padding: 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
     }
-    #container input {
+    #container_slider input {
         display: none;
     }
       
-    #container input:checked + label {
+    #container_slider input:checked + label {
         background-color: white;
     }
       
-    #container input:checked + label + .slide {
+    #container_slider input:checked + label + .slide {
         transform: translateX(0);
         opacity: 1;
     }
       
-    #container input:checked ~ .slide {
+    #container_slider input:checked ~ .slide {
         transform: translateX(100%);
     }
+
+
       
-    #container label {
+    #container_slider label {
         display: inline-block;
         width: 15px;
         height: 15px;
         cursor: pointer;
-        border: 2px solid #fff;
+        border: 2px solid #ffffff;
         border-radius: 50%;
         background-color: transparent;
-        margin: calc(80vh - 30px) 6px 0 6px;
         transition-duration: 0.4s;
+
+        margin: 0 10px 20px 10px;
     }
       
-    #container .slide {
+    #container_slider .slide {
         margin: 25px;
         width: calc(100% - 50px);
         height: calc(100% - 50px);
@@ -462,20 +469,58 @@
         transition-duration: 0.4s;
     }
       
-    #container .background1 {
-        background-color: #4285f4;
+    #container_slider .background1 {
+        background-image: url(imagens/main_2.png);
     }
       
-    #container .background2 {
-        background-color: #ea4335;
+    #container_slider .background2 {
+        background-image: url(imagens/main_3.png);
     }
       
-    #container .background3 {
-        background-color: #fbbc05;
+    #container_slider .background3 {
+        background-image: url(imagens/main_4.png);
     }
       
-    #container .background4 {
-        background-color: #34a853;
+    /* OPÇÕES EXTRAS */
+
+    #container_opcoes_extra{
+        width: 95%;
+        height: 300px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        align-items: center;
+        
     }
+
+    .opcao_extra{
+        width: 48%;
+        height: 48%;
+
+        background-color: var(--cor_verde);
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .opcao_extra img{
+        width: 95%;
+        pointer-events: none;
+    }
+
+    .opcao_extra:hover  .imagem_opcoes_extra{
+        animation: animation_opcoes_extra 0.5s forwards;
+    }
+
+    @keyframes animation_opcoes_extra{
+        100%{
+            transform: scale(0.5);
+        }
+    }
+
 
 }
