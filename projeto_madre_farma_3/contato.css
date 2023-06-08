@@ -155,13 +155,16 @@ header > div{
 }
 
 /* ----------MAIN---------- */
-main{
-    background-image: url(imagens/fundo_5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: expandir_main 2s forwards;
+main{  
+
+    height: 100%;
     width: 100%;
+}
+
+main > img{
+    width: 100%;
+    height: 100%;
+    animation: expandir_main 2s forwards;
 }
 
 @keyframes expandir_main{

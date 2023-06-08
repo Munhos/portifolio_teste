@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  
+#input1:checked + #bg1{
+    opacity: 1;
+    transition: 1s;
+}
+
+#input1:checked ~ #label1{
+    background-color: white;
+}
+
+#input2:checked + #bg2{
+    opacity: 1;
+    transition: 1s;
+}
+
+#input2:checked ~ #label2{
+    background-color: white;
+}
+
+#input3:checked + #bg3{
+    opacity: 1;
+    transition: 1s;
+}
+
+#input3:checked ~ #label3{
+    background-color: white;
+}

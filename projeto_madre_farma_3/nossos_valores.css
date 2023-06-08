@@ -67,9 +67,8 @@ nav > ol{
 
 nav > ol > li{
     display: inline;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 10px;
-
 }
 
 nav > ol > li > a{
@@ -157,20 +156,25 @@ header > div{
 }
 
 /* ----------MAIN---------- */
-main{  
-    background-image: url(imagens/fundo_3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: expandir_main 2s forwards;
-    height: 100vh;
+main{
+    width: 100%;
+    overflow: hidden;
 }
 
-@keyframes expandir_main{
-    0%{
-        width: 0%;    
-          
+main img{
+    animation: esticar 2s forwards;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes esticar{
+    0% {
+        left: 100%;
+        width: 0%;
     }
-    100%{
+    100% {
+        left: 0%;
         width: 100%;
     }
 }
