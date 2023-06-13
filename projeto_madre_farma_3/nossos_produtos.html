@@ -36,5 +36,49 @@
     <main>
         <img src="imagens/fundo_4.png" alt="">
     </main>
+    <div id="container_geral_mobile">
+        <div id="header_mobile">
+            <nav>
+                <img src="imagens/logo-header.png" alt="" style="margin-right: 80px;">
+                <div id="container_menu" style="margin-left: 80px;">
+                    <img src="imagens/icone_menu.png" alt="">
+                    <div id="menu">
+                        <ol>
+                            <li><a href="index.html">Sobre nós</a></li>
+                            <li><a href="nossos_valores.html">Nossos Valores</a></li>
+                            <li><a href="nossos_produtos.html">Nossos Produtos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div id="main_mobile">
+            <div class="containers_info">
+                <h1 style="margin-top: 5px;">Nossos Produtos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad accusantium soluta, dicta ab laboriosam non tempore natus. Excepturi ex ullam quis ipsa modi quas maiores. Distinctio facere nostrum officiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid suscipit, sit voluptatum laborum obcaecati delectus optio provident libero in, aspernatur ex, fuga necessitatibus facilis incidunt omnis saepe et similique blanditiis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit magni in quibusdam ut debitis dolor officiis odit. Aliquid nihil libero voluptatem minima molestias omnis accusamus similique, suscipit asperiores provident.
+                </p>
+                <div id="img1"></div>
+                <!-- <img src="imagens/fundo_7.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        const botao_container_menu = document.getElementById("container_menu")
+        const botao_menu = document.getElementById("menu")
+
+        botao_container_menu.addEventListener("click", () => {
+            if (botao_menu.style.display == "none"){
+                botao_menu.style.display = "flex"
+                botao_container_menu.style.borderRadius = "10px 10px 0 0"
+            }else{
+                botao_menu.style.display = "none"
+                botao_container_menu.style.borderRadius = "10px"
+            }
+        })
+    </script>
 </body>
 </html>

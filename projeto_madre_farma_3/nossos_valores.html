@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="nossos_valores.css">
 </head>
 <body>
-    <header>
+    <header style="background-image: linear-gradient(to right, #009b9e, #0092a2);">
         <div></div>
         <nav>
             <ol>
@@ -33,8 +33,8 @@
             </ol>
         </nav>
 
-        <content style="display: flex; justify-content: center; margin-top: 30px;">
-            <p style="width: 50%; text-align: center; border: 2px dashed black; padding: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.39); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <content style="display: flex; justify-content: center; margin-top: 30px; height: 75%;">
+            <!-- <p style="width: 50%; max-height: 100%; font-size: 0.85em; text-align: center; border: 2px solid black; padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.39); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
                 Farmácia fria tem remédio <br>
                 Basta colocar o coração nela <br>
                 <br>
@@ -81,11 +81,105 @@
                 imagine milhões deles juntos <br>
                 <br>
                 Chegou Madre Farma <br>
-            </p>
+            </p> -->
+            <div id="manifesto">
+                <div id="texto">
+                    <p id="texto_1">Farmácia fria tem remédio <br>
+                        Basta colocar o coração nela <br>
+                        <br>
+                        Toda farmácia existe pra cuidar <br>
+                        da gente, mas será que todas <br>
+                        fazem isso de verdade? <br>
+                        <br>
+                        Na publicidade, muito slogan sobre <br>
+                        cuidado. Na prática, pouco calor <br>
+                        humano <br>
+                        <br>
+                        Acreditamos que a farmácia ideal <br>
+                        devia ter outra cara. Cara, jeito e <br>
+                        coração de mãe. <br>
+                        <br>
+                        Ela é o cuidado em pessoa: Marias, <br>
+                        Joanas, Amélias, Solanges, <br>
+                        Simones, Anas, Lucianas e <br>
+                        Zulmiras, como a nossa querida <br>
+                        Matriarca <br>
+                        <br>
+                        Juntas, são uma rede que protege <br>
+                        milhões de brasileiros. <br></p>
+                    <p id="texto_2">E que inspira outras milhões <br>
+                        a também cuidar que nem mãe: <br>
+                        pais, tios, avós, irmãos, amigos, <br>
+                        enfermeiras, professores, cuidadores <br>
+                        ... <br>
+                        E, claro, nós <br>
+                        <br>
+                        Somos a Madre Farma e chegamos pra <br>
+                        fazer esta rede crescer <br>
+                        <br>
+                        Ao lado de tantas mães brasileiras de <br>
+                        todos os tipos, já nascemos grande <br>
+                        <br>
+                        Mais que uma rede de farmácias, somos <br>
+                        uma rede de cuidado <br>
+                        Vem fazer parte! <br>
+                        <br>
+                        Se em coração de mãe <br>
+                        sempre cabe mais um, <br>
+                        imagine milhões deles juntos <br>
+                        <br>
+                        Chegou Madre Farma <br></p>
+                </div>
+            </div>
+            
         </content>
     </header>
     <main>
         <img src="imagens/fundo_8.png" alt="">
     </main>
+    <div id="container_geral_mobile">
+        <div id="header_mobile">
+            <nav>
+                <img src="imagens/logo-header.png" alt="" style="margin-right: 80px;">
+                <div id="container_menu" style="margin-left: 80px;">
+                    <img src="imagens/icone_menu.png" alt="">
+                    <div id="menu">
+                        <ol>
+                            <li><a href="index.html">Sobre nós</a></li>
+                            <li><a href="nossos_valores.html">Nossos Valores</a></li>
+                            <li><a href="nossos_produtos.html">Nossos Produtos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div id="main_mobile">
+            <div class="containers_info">
+                <h1 style="margin-top: 5px;">Nossos Valores</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad accusantium soluta, dicta ab laboriosam non tempore natus. Excepturi ex ullam quis ipsa modi quas maiores. Distinctio facere nostrum officiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid suscipit, sit voluptatum laborum obcaecati delectus optio provident libero in, aspernatur ex, fuga necessitatibus facilis incidunt omnis saepe et similique blanditiis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit magni in quibusdam ut debitis dolor officiis odit. Aliquid nihil libero voluptatem minima molestias omnis accusamus similique, suscipit asperiores provident.
+                </p>
+                <div id="img1"></div>
+                <!-- <img src="imagens/fundo_7.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        const botao_container_menu = document.getElementById("container_menu")
+        const botao_menu = document.getElementById("menu")
+
+        botao_container_menu.addEventListener("click", () => {
+            if (botao_menu.style.display == "none"){
+                botao_menu.style.display = "flex"
+                botao_container_menu.style.borderRadius = "10px 10px 0 0"
+            }else{
+                botao_menu.style.display = "none"
+                botao_container_menu.style.borderRadius = "10px"
+            }
+        })
+    </script>
 </body>
 </html>
