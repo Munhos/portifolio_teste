@@ -17,6 +17,47 @@
     --cor_branco: rgb(248, 248, 248)
 }
 
+html{
+    overflow: hidden;
+}
+
+content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#manifesto{
+    background-image: url(imagens/manifesto_2.png);
+    width: 95%;
+    height: 530px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+    max-width: 800px;
+}
+#texto p{
+    color: white;
+    font-size: 0.63vw;
+}
+#texto_1{
+    margin-right: 55px;
+}
+#texto_2{
+    margin-left: 55px;
+    text-align: end;
+}
+
 @media (min-width: 426px){
     body{
         height: 100vh;
@@ -47,6 +88,9 @@
     
     nav{
         width: 100%;
+        background-color: var(--cor_branco);
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
     nav > ol{
@@ -268,6 +312,7 @@
 
     .containers_info {
         display: flex;
+        justify-content: center;
         width: 100%;
         flex-direction: column;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
@@ -284,6 +329,8 @@
         margin: 10%;
         margin-top: 10px;
         margin-bottom: 10px;
+
+        padding: 10px;
     }
     .containers_info > div {
         width: 100%;
@@ -293,5 +340,12 @@
     #img1 {
         background-image: url(imagens/fundo_7.png);
         background-size: cover;
+    }
+}
+
+@media (min-width: 1921px){
+    #texto p{
+        color: white;
+        font-size: 0.5vw;
     }
 }

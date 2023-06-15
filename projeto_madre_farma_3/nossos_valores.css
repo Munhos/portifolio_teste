@@ -17,44 +17,49 @@
     --cor_branco: rgb(248, 248, 248)
 }
 
-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#manifesto{
-    background-image: url(imagens/manifesto_2.png);
-    width: 95%;
-    height: 530px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#texto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-
-    max-width: 800px;
-}
-#texto p{
-    color: white;
-    font-size: 0.7vw;
-}
-#texto_1{
-    margin-right: 55px;
-}
-#texto_2{
-    margin-left: 55px;
-    text-align: end;
+html{
+    overflow: hidden;
 }
 
 @media (min-width: 426px){
+    content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #manifesto{
+        background-image: url(imagens/manifesto_2.png);
+        width: 95%;
+        height: 530px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    
+        max-width: 800px;
+    }
+    #texto p{
+        color: white;
+        font-size: 0.7vw;
+    }
+    #texto_1{
+        margin-right: 55px;
+    }
+    #texto_2{
+        margin-left: 55px;
+        text-align: end;
+    }
+    
+    
     body{
         height: 100vh;
         overflow: none;
@@ -221,6 +226,7 @@ content{
 
 
 
+
 #container_geral_mobile{
     display: none;
 }
@@ -344,5 +350,12 @@ content{
 
     #main_mobile{
         background-image: linear-gradient(to right, #009b9e, #0092a2);;
+    }
+}
+
+@media (min-width: 1921px){
+    #texto p{
+        color: white;
+        font-size: 0.5vw;
     }
 }
