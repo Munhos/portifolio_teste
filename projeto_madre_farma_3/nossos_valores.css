@@ -17,9 +17,7 @@
     --cor_branco: rgb(248, 248, 248)
 }
 
-html{
-    overflow: hidden;
-}
+
 
 @media (min-width: 426px){
     content{
@@ -66,6 +64,8 @@ html{
     
         display: flex;
         justify-content: end;
+
+        overflow: hidden;
     }
     
     /* ----------HEADER---------- */
@@ -129,6 +129,10 @@ html{
         width: 0%;
         height: 2px;
     }
+
+    #sublinhado_verde{
+        animation: expandir_sublinhado 1s forwards;
+    }
     
     .texto_header:hover + .sublinhado{
         animation: expandir_sublinhado 1s forwards;
@@ -147,6 +151,10 @@ html{
         color: var(--cor_azul);
     }
     #sublinhado_azul{
+        background-color: var(--cor_azul);
+    }
+
+    #sublinhado_azul_2{
         background-color: var(--cor_azul);
     }
     
@@ -231,126 +239,136 @@ html{
     display: none;
 }
 
-@media (max-width: 425px){
-    #container_geral_mobile{
-        display: block;
+@media (max-width: 425px) {
+    #container_geral_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-image: linear-gradient(to right, #009b9e, #0092a2);
     }
 
     header,
-    main{
+    main {
         display: none;
     }
 
-    body{
+    body {
         background-color: var(--cor_branco);
     }
 
-    #header_mobile{
-        width: 427px;
+    #header_mobile {
+        width: 100%;
         height: 100px;
         background-color: var(--cor_verde);
-
         display: flex;
         justify-content: center;
         align-items: center;
-
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
-    #header_mobile > nav{
+
+    #header_mobile > nav {
         display: flex;
     }
 
-    #header_mobile > nav > #container_menu{
+    #header_mobile > nav > #container_menu {
         width: 50px;
         height: 50px;
         background-color: var(--cor_azul);
         border-radius: 10px;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
     }
 
-    #header_mobile > nav > #container_menu > img{
+    #header_mobile > nav > #container_menu > img {
         width: 50%;
         height: 50%;
     }
 
-    #header_mobile > nav > #container_menu:hover{
+    #header_mobile > nav > #container_menu:active {
         transform: scale(1.1);
-        transition: .5s
+        transition: .5s;
     }
 
-    #header_mobile > nav #menu{
+    #header_mobile > nav #menu-container {
         display: none;
         position: absolute;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around; /* Adicionado */
+    }
 
+    #header_mobile > nav #menu {
+        display: none;
+        position: absolute;
         width: 200px;
         height: 200px;
         background-color: var(--cor_azul);
         transform: translate(-75px, 124px);
-
         border-radius: 10px 0 10px 10px;
     }
-    #header_mobile > nav ol{
+    #header_mobile > nav ol {
         list-style: none;
     }
-    #header_mobile > nav > img{
+    #header_mobile > nav > img {
         width: 100px;
     }
 
-    #menu li{
+    #menu li {
         height: 30px;
         display: flex;
         align-items: center;
-
         margin-top: 15px;
     }
 
-    #menu li a{
+    #menu li a {
         color: white;
         text-decoration: none;
         text-indent: 10px;
     }
 
-    .containers_info{
+    #menu li a:hover{
+        transform: scale(1.1);
+    }
+
+    .containers_info {
         display: flex;
-        width: 425px;
+        justify-content: center;
         flex-direction: column;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
     }
-    .containers_info h1{
+    .containers_info h1 {
         text-align: center;
-        margin-top: 30px;
-
-        color: white;
+        padding: 20px;
+        color: var(--cor_branco);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     }
-    .containers_info p{
+    .containers_info p {
         text-align: center;
+        margin: auto;
         width: 80%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
-        margin: 10%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
         color: white;
-
+        padding: 10px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     }
-    .containers_info > div{
+    .containers_info > div {
         width: 100%;
         height: 200px;
         background-position: center;
     }
-    #img1{
+    #img1 {
         background-image: url(imagens/fundo_8.png);
         background-size: cover;
     }
 
     #main_mobile{
-        background-image: linear-gradient(to right, #009b9e, #0092a2);;
+        height: 100vh;
     }
+
+    
 }
 
 @media (min-width: 1921px){

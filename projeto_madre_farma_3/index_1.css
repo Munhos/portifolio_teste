@@ -17,9 +17,6 @@
     --cor_branco: rgb(248, 248, 248)
 }
 
-html{
-    overflow: hidden;
-}
 
 content{
     display: flex;
@@ -61,7 +58,7 @@ content{
 @media (min-width: 426px){
     body{
         height: 100vh;
-        overflow: none;
+        overflow: hidden;
     }
     
     /* ----------HEADER---------- */
@@ -125,6 +122,10 @@ content{
         width: 0%;
         height: 2px;
     }
+
+    #sublinhado_azul{
+        animation: expandir_sublinhado 1s forwards;
+    }
     
     .texto_header:hover + .sublinhado{
         animation: expandir_sublinhado 1s forwards;
@@ -143,6 +144,10 @@ content{
         color: var(--cor_azul);
     }
     #sublinhado_azul{
+        background-color: var(--cor_azul);
+    }
+
+    #sublinhado_azul_2{
         background-color: var(--cor_azul);
     }
     
@@ -226,7 +231,11 @@ content{
 
 @media (max-width: 425px) {
     #container_geral_mobile {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-image: linear-gradient(to right, #009b9e, #0092a2);
     }
 
     header,
@@ -245,7 +254,7 @@ content{
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
 
     #header_mobile > nav {
@@ -268,7 +277,7 @@ content{
         height: 50%;
     }
 
-    #header_mobile > nav > #container_menu:hover {
+    #header_mobile > nav > #container_menu:active {
         transform: scale(1.1);
         transition: .5s;
     }
@@ -310,27 +319,30 @@ content{
         text-indent: 10px;
     }
 
+    #menu li a:hover{
+        transform: scale(1.1);
+    }
+
     .containers_info {
         display: flex;
         justify-content: center;
-        width: 100%;
         flex-direction: column;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
     }
     .containers_info h1 {
         text-align: center;
-        margin-top: 30px;
+        padding: 20px;
+        color: var(--cor_branco);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     }
     .containers_info p {
         text-align: center;
+        margin: auto;
         width: 80%;
-        border: 2px solid rgb(0, 0, 0);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
-        margin: 10%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        color: white;
         padding: 10px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     }
     .containers_info > div {
         width: 100%;
@@ -341,6 +353,12 @@ content{
         background-image: url(imagens/fundo_7.png);
         background-size: cover;
     }
+
+    #main_mobile{
+        height: 100vh;
+    }
+
+    
 }
 
 @media (min-width: 1921px){
