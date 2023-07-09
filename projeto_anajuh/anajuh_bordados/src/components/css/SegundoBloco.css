@@ -1,0 +1,63 @@
+#ContainerSegBloco{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#ContainerCarrosselSegBloco{
+    position: relative;
+}
+
+#ContainerLabelSegBloco{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+
+.LabelSegBloco{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+
+    border: 3px solid white;
+}
+
+.LabelSegBloco:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: .5s;
+}
+
+
+#ContainerImagensSegBloco{
+    display: flex;
+    overflow: hidden;
+}
+
+#ContainerImagensSegBloco input{
+    display: none;
+}
+
+ #RadioSegBloco1:checked ~ #LinkSegBloco{
+    margin-left: calc(0%);
+    transition: 1s;
+}
+
+#RadioSegBloco2:checked ~ #LinkSegBloco{
+    margin-left: calc(-100%);
+    transition: 1s;
+}
+
+#RadioSegBloco3:checked ~ #LinkSegBloco{
+    margin-left: calc(-200%);
+    transition: 1s;
+}

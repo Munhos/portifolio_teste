@@ -6,12 +6,14 @@
 
 :root{
     --cor_azul: #315ca0;
+    --cor_azul_claro: rgb(64, 113, 191);
+    --cor_azul: rgba(49, 91, 160, 0.3);
     --cor_azul_escuro: #274980;
     --cor_azul_escuro_2: #1d3863;
     --cor_azul_transparente:#315ba09f;
 
-    --cor_verde:#3fb498;
-    --cor_verde_transparente: #3fb499b0;
+    --cor_verde:rgb(63, 180, 152);
+    --cor_verde_transparente: rgba(63, 180, 153, 0.69);
     --cor_verde_escuro:#318b76;
     
     --cor_branco: rgb(248, 248, 248)
@@ -47,6 +49,7 @@ content{
 
 .enderecos:hover{
     font-weight: bolder;
+    transform: scale(1.2);
 }
 
 #texto div{
@@ -90,6 +93,8 @@ content{
     display: flex;
 }
 
+
+/*  */
 @media (min-width: 426px){
     body{
         height: 100vh;
